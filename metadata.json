@@ -1,0 +1,9 @@
+
+{
+  "name": "Legacy Real Estate Consultants",
+  "description": "High-end 3D-feel real estate website for DHA Karachi luxury markets.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
