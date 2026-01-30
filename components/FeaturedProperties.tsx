@@ -12,7 +12,7 @@ const FeaturedProperties: React.FC = () => {
       size: "1000 Yards",
       beds: 6,
       baths: 7,
-      img: "https://images.unsplash.com/photo-1600585154340-be6199f7d009?auto=format&fit=crop&q=80&w=1200"
+      img: "https://images.unsplash.com/photo-1706808849780-7a04fbac83ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1vZGVybiUyMGhvdXNlfGVufDB8fDB8fHww"
     },
     {
       title: "Modernist Bukhari Hub",

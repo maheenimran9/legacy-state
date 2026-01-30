@@ -8,7 +8,7 @@ const Services: React.FC = () => {
     { 
       title: "Luxury Residential", 
       icon: <Home size={32} />, 
-      img: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=800",
+      img: "https://plus.unsplash.com/premium_photo-1661915661139-5b6a4e4a6fcc?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bHV4dXJ5JTIwaG91c2V8ZW58MHx8MHx8fDA%3D",
       desc: "Curating Phase 5, 6, and 8 bungalows for modern living."
     },
     { 
@@ -26,7 +26,7 @@ const Services: React.FC = () => {
     { 
       title: "Legal & Transfers", 
       icon: <Gavel size={32} />, 
-      img: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=800",
+      img: "https://media.istockphoto.com/id/1066711856/photo/lawyer-working-with-documents-justice-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=3-RWS5gTynbEM9U2jOQeDh2Enru6wTcstpjwMyEDQYY=",
       desc: "Streamlined DHA office processing and document vetting."
     }
   ];
