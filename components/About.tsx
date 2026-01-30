@@ -7,29 +7,33 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-24 items-center">
         
         {/* IMAGE SECTION */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          className="relative p-6" 
-        >
-          {/* Decorative Border Frame */}
-          <div className="absolute top-12 left-12 right-0 bottom-0 border-2 border-[#C9A24D]/30 rounded-3xl -z-0 aspect-[4/5]"></div>
+<motion.div
+  initial={{ opacity: 0, scale: 0.95 }}
+  whileInView={{ opacity: 1, scale: 1 }}
+  viewport={{ once: true }}
+  className="relative flex justify-center lg:justify-start"
+>
+  {/* Is wrapper div ko dhiyaan se dekhein, ye image aur border ko lock kar raha hai */}
+  <div className="relative w-full max-w-[500px] aspect-[4/5] group">
+    
+    {/* 1. Decorative Border - Fixed relative to the image edges */}
+    <div className="absolute top-[5%] left-[5%] right-[-5%] bottom-[-5%] border-2 border-[#C9A24D]/30 rounded-3xl -z-0 transition-all duration-500 group-hover:top-[3%] group-hover:left-[3%]"></div>
 
-          {/* Main Image Wrapper */}
-          <motion.div 
-            whileHover={{ x: -15, y: -15 }} 
-            transition={{ type: "spring", stiffness: 200, damping: 20 }}
-            className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border border-white/5 aspect-[4/5]"
-          >
-            <img 
-              src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&auto=format&fit=crop&q=80" 
-              alt="Luxury Estate" 
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/60 via-transparent to-transparent"></div>
-          </motion.div>
-        </motion.div>
+    {/* 2. Main Image Wrapper */}
+    <motion.div 
+      whileHover={{ x: -10, y: -10 }} 
+      transition={{ type: "spring", stiffness: 200, damping: 20 }}
+      className="relative z-10 w-full h-full rounded-3xl overflow-hidden shadow-2xl border border-white/5 bg-[#0B1F33]"
+    >
+      <img 
+        src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&auto=format&fit=crop&q=80" 
+        alt="Luxury Estate" 
+        className="w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0B1F33]/60 via-transparent to-transparent"></div>
+    </motion.div>
+  </div>
+</motion.div>
 
         {/* CONTENT SECTION */}
         <div className="space-y-10">
